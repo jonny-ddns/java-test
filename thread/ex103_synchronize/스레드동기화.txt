@@ -1,0 +1,28 @@
+멀티스레드 프로그램은 스레드끼리 객체를 공유해 작업하는 경우가 있다.
+synchronized 키워드를 사용하면 특정 스레드가 사용중인 객체에 다른 스레드가 접근할 수 없게 되어 동기화가 보장된다.
+synchronized 키워드는 인스턴스, 정적 메서드, 특정 코드 영역 등에 붙일 수 있다.
+
+임계영역(critical section)이란 스레드 1개만 실행하거나 접근이 가능한 자원 및 코드의 범위를 말한다.
+락(lock)이란 공유객체에 여러 스레드가 접근하지 못하게 하는 과정이다. 락은 모든 객체가 메모리 힙 영역에 생성될 때 자동으로 할당된다.
+
+특정 스레드 A가 실행중(Running)에 synchronized 선언된 블록을 만나게 되면 object's Lock Pool 로 이동하고 락(lock)을 획득한다.
+다른 스레드는 Running 중 Blocked 되어 실행가능한(Runnable) 상태가 된다.
+특정 스레드 A의 synchronized 블록 실행이 종료된다면 A는 락을 해제한다.
+
+A가 락을 해제하면 다른 스레드 B가 실행가능한(Runnable)상태에서 실행(Running)을 하게 된다.
+만약 스레드 B가 synchronized 선언된 블록을 만나면 B가 object's Lock Pool 로 이동하고 락(lock)을 획득한다. 이후 과정은 앞과 동일하다.
+
+임계영역 설정하기
+1) 동기화 메서드
+   public synchronized void methodA(){
+   }
+
+2) 동기화 블록
+	public void methodA(){
+
+		synchronized(공유객체){
+			//공유객체가 자기자신이라면 키워드 this를 넣는다
+		}
+	}
+
+
