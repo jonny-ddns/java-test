@@ -1,4 +1,4 @@
-package networking.pack03_UDP.ex03;
+package networking.pack03_UDP.ex11_sendingReceiving.ex12;
 
 import java.io.UnsupportedEncodingException;
 import java.net.*;
@@ -8,7 +8,7 @@ public class Test_receiver {
         System.out.println("receiver");
         DatagramSocket datagramSocket = null;
         try {
-            datagramSocket = new DatagramSocket(new InetSocketAddress("localhost", 7000));
+            datagramSocket = new DatagramSocket(new InetSocketAddress("localhost", 7010));
             while(true){
 //                System.out.println("while - start");
                 byte[] byteArr = new byte[]{};
@@ -25,9 +25,7 @@ public class Test_receiver {
 //                }
 ////                System.out.println("while - end");
             }
-        } catch (SocketException se){
-            se.printStackTrace();
-        } catch (UnsupportedEncodingException e) {
+        } catch (SocketException | UnsupportedEncodingException e){
             e.printStackTrace();
         } finally {
             if(datagramSocket != null) { datagramSocket.close(); }

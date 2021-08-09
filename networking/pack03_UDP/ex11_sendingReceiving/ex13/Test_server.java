@@ -1,4 +1,4 @@
-package networking.pack03_UDP.ex04;
+package networking.pack03_UDP.ex11_sendingReceiving.ex13;
 
 import java.io.IOException;
 import java.net.DatagramPacket;
@@ -12,7 +12,7 @@ public class Test_server {
         try {
             DatagramSocket ds = new DatagramSocket(port);
             while(true){
-                byte buffer[] = new byte[512];
+                byte[] buffer = new byte[512];
                 DatagramPacket packet = new DatagramPacket(buffer, buffer.length);
                 System.out.println("ready");
 

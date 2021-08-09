@@ -1,9 +1,9 @@
-package networking.pack03_UDP.ex01;
+package networking.pack03_UDP.ex02_datagrampacket;
 
 import java.net.DatagramPacket;
 import java.net.InetSocketAddress;
 
-public class Test02 {
+public class Test01 {
     public static void main(String[] args) {
         byte[] byteArr = new byte[]{};
         new DatagramPacket(
