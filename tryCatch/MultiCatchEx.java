@@ -1,4 +1,4 @@
-package _past.j20210618_tryCatch;
+package tryCatch;
 
 public class MultiCatchEx {
 	public static void main(String[] args) {
@@ -6,7 +6,7 @@ public class MultiCatchEx {
 		
 		try {
 			
-			int x = changeToInteger("test");
+			int x = changeToInteger("scannerTest");
 			int y = printArrayElement(new int[] {1, 2, 3}, 5);
 		
 		} catch (NumberFormatException nfe){

@@ -15,7 +15,7 @@ public class Test04_Properties {
         String user = properties.getProperty("usage");
         String id = properties.getProperty("userId");
         String pw = properties.getProperty("userPw");
-        String test = properties.getProperty("test");
+        String test = properties.getProperty("scannerTest");
 
         System.out.println(user);   //calculater
         System.out.println(id);     //sudo

@@ -4,7 +4,7 @@ public class Test01 extends Thread{
 
     @Override
     public void run() {
-        System.out.println("test");
+        System.out.println("scannerTest");
         String name = getName();
         System.out.println(name);
         setName("새로 생성한 이름");

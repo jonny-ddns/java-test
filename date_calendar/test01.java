@@ -1,4 +1,4 @@
-package _past.j20210623_Date_Calendar;
+package date_calendar;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;

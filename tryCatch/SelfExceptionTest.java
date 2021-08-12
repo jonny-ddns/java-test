@@ -1,4 +1,4 @@
-package _past.j20210618_tryCatch;
+package tryCatch;
 
 public class SelfExceptionTest {
     void getWarning(int a) throws SelfException {

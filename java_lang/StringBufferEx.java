@@ -1,4 +1,4 @@
-package _past.j20210620_java_lang;
+package java_lang;
 
 public class StringBufferEx {
     public static void main(String[] args) {

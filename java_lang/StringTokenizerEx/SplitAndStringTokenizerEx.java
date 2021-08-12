@@ -1,4 +1,4 @@
-package _past.j20210620_java_lang.StringTokenizerEx;
+package java_lang.StringTokenizerEx;
 
 import java.util.StringTokenizer;
 
