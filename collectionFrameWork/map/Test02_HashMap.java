@@ -1,4 +1,4 @@
-package collectionFrameWork;
+package collectionFrameWork.map;
 
 import java.util.HashMap;
 import java.util.Map;

@@ -1,4 +1,4 @@
-package collectionFrameWork;
+package collectionFrameWork.pack02;
 
 import java.util.Enumeration;
 import java.util.Properties;

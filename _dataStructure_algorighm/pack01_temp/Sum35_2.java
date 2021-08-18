@@ -1,4 +1,4 @@
-package _past.j20210217_algorithm;
+package _dataStructure_algorighm.pack01_temp;
 public class Sum35_2 {
 	public static void method(int a, int b){
 		int t = 0;
