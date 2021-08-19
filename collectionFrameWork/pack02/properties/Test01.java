@@ -1,9 +1,9 @@
-package collectionFrameWork.pack02;
+package collectionFrameWork.pack02.properties;
 
 import java.util.Enumeration;
 import java.util.Properties;
 
-public class Test04_Properties {
+public class Test01 {
     public static void main(String[] args) {
         Properties properties = new Properties();
 

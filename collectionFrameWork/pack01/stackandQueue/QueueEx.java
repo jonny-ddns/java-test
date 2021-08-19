@@ -1,4 +1,4 @@
-package collectionFrameWork.stackandQueue;
+package collectionFrameWork.pack01.stackandQueue;
 
 import java.util.LinkedList;
 import java.util.Queue;

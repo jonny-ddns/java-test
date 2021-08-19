@@ -1,4 +1,4 @@
-package collectionFrameWork.Comparable_Comparator.ComparatorEx;
+package collectionFrameWork.pack02.Comparable_Comparator.ComparatorEx;
 
 import java.util.Comparator;
 

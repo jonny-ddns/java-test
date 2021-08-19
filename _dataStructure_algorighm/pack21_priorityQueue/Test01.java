@@ -1,4 +1,4 @@
-package _dataStructure_algorighm.pack02.priorityQueue;
+package _dataStructure_algorighm.pack21_priorityQueue;
 
 //우선순위 큐는 heap 구조를 가진다
 public class Test01 {
@@ -14,15 +14,19 @@ public class Test01 {
         this.array = new int[capacity];
         this.count = 0;
     }
+
     //노드의 부모
+    //부모 노드의 위치 파악하기
+    //해당 안되면 -1 리턴
     public int Parent(int i){
         if(i<=0 || i>=this.count){
             return -1;
         }
         return (i-1)/2;
     }
+
     //노드 자식들
-    //자식 - left
+    //왼쪽 자식 노드의 위치
     public int leftChild(int i){
         int left = 2*i+1;
         if(left >= this.count){
@@ -30,7 +34,7 @@ public class Test01 {
         }
         return left;
     }
-    //자식 - right
+    //오른쪽 자식 노드의 위치
     public int rightChild(int i){
         int right = 2*i+2;
         if(right >= this.count){
@@ -38,7 +42,9 @@ public class Test01 {
         }
         return right;
     }
-    //최대항목 구하기
+
+    //뿌리, 즉 최댓값(혹은 최솟값) 구하기
+    //뿌리는 힙의 최상단에 위치하므로 첫번쨰 값이 해당됨
     public int getMaximum(int i){
         if(this.count == 0){
             return -1;
@@ -46,16 +52,33 @@ public class Test01 {
         return this.array[0];
     }
 
-    //항목을 힙으로 만들기
+    //힙으로 만들기 -> heapifying
+    //항목이 추가되는 경우
+    //힙 안에서 요소의 위치를 수정하여 힙 조건을 만족하도록 수정한다
+    //방법 : 자식 노드 중 최대값과 자리 바꾸기(만족할 때까지 반복)
+    //힙으로 만들기 과정은 흘러내리는 것과 비슷해 percolateDown 이라고 함
     public void percolateDown(int i){
-        int l, r, max, temp;
-        l = leftChild(i);
-        r = rightChild(i);
-        if(l != -1 && this.array[l]>this.array[i]){
-            max = 1;
-        } else{
+        int l = leftChild(i);
+        int r = rightChild(i);
+        int max;
+        int temp;
+
+        //max 값의 위치를 찾아서 부모노드와 자식노드 위치 바꾸기
+        if(l != -1 && this.array[l] > this.array[i]){
+            max = l;
+        } else {
             max = i;
         }
+
+        if(r != -1 && this.array[r] > this.array[max]){
+            max = r;
+        } else {
+            temp = this.array[i];
+            this.array[i] = this.array[max];
+            this.array[i] = temp;
+        }
+        //max 번째에서 재귀호출
+        percolateDown(max);
     }
 
     //항목 삭제하기
@@ -64,9 +87,8 @@ public class Test01 {
             return -1;
         }
         int data = this.array[0];
-        this.array[0] = this.array[this.count -1];
+        this.array[0] = this.array[this.count-1];
         this.count--;   //힙 크기 줄이기
-
         return data;
     }
     

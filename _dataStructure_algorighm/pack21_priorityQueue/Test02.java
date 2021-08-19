@@ -1,8 +1,8 @@
-package collectionFrameWork.priorityQueue.ex01;
+package _dataStructure_algorighm.pack21_priorityQueue;
 
 import java.util.PriorityQueue;
 
-public class Test {
+public class Test02 {
     public static void main(String[] args) {
         PriorityQueue<Integer> que01 = new PriorityQueue<>();
 
@@ -22,7 +22,6 @@ public class Test {
 
         System.out.println("size : "+ que01.size());
         System.out.println("1 포함여부 : "+ que01.contains(1));
-
     }
 }
 

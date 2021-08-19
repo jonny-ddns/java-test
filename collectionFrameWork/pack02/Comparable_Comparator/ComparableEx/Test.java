@@ -1,4 +1,4 @@
-package collectionFrameWork.Comparable_Comparator.ComparableEx;
+package collectionFrameWork.pack02.Comparable_Comparator.ComparableEx;
 
 public class Test {
     public static void main(String[] args) {

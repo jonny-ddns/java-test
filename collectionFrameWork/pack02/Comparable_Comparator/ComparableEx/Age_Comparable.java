@@ -1,4 +1,4 @@
-package collectionFrameWork.Comparable_Comparator.ComparableEx;
+package collectionFrameWork.pack02.Comparable_Comparator.ComparableEx;
 
 public class Age_Comparable implements Comparable{
     //compareTo 메서드를 오버라이드하여 재정의
