@@ -1,4 +1,4 @@
-package _past.j20210616_inheritance_Interface.extendTest;
+package java_basic01.j20210616_inheritance_Interface.extendTest;
 
 public class Test01 {
     int k = 10;

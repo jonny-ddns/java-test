@@ -1,4 +1,4 @@
-package _past.j20210616_inheritance_Interface.absractTest;
+package java_basic01.j20210616_inheritance_Interface.absractTest;
 
 public class mainClass {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package _past.j20210616_inheritance_Interface;
+package java_basic01.j20210616_inheritance_Interface;
 
 public class Adult extends Human{
 	String job = null;

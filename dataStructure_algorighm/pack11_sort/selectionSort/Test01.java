@@ -1,7 +1,7 @@
 package dataStructure_algorighm.pack11_sort.selectionSort;
 
 //선택정렬
-public class TestSelection01 {
+public class Test01 {
     public void test(){
         int[] intArr = {1, 14, 9, 6, 2, 19, 4, 7};
         int i, j, min;

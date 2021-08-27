@@ -1,4 +1,4 @@
-package _past.j20210325_staticBindingDynamicBinding.dynamicEx;
+package java_basic01.j20210325_staticBindingDynamicBinding.dynamicEx;
 
 class Human { 
 	//static 이 붙지 않아서 오버라이드 가능

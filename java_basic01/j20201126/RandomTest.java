@@ -1,4 +1,4 @@
-package _past.j20201126;
+package java_basic01.j20201126;
 import java.util.Random;
 public class RandomTest {
 	public static void main(String[] args) {

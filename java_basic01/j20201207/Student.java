@@ -1,4 +1,4 @@
-package _past.j20201207;
+package java_basic01.j20201207;
 public class Student implements Comparable<Student>{
 
 	private String name;

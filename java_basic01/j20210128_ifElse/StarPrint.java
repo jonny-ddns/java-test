@@ -1,4 +1,4 @@
-package _past.j20210128_ifElse;
+package java_basic01.j20210128_ifElse;
 
 public class StarPrint {
 	

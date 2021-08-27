@@ -1,4 +1,4 @@
-package _past.j20210325_staticBindingDynamicBinding.staticEx;
+package java_basic01.j20210325_staticBindingDynamicBinding.staticEx;
 class Human {
 	//static 이라고 명시. 
     public static void walk() {

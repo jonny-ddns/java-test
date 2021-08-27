@@ -1,4 +1,4 @@
-package _past.j20210128_console;
+package java_basic01.j20210128_console;
 
 public class Console_test {
 	

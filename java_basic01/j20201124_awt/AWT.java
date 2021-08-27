@@ -1,4 +1,4 @@
-package _past.j20201124_awt;
+package java_basic01.j20201124_awt;
 import java.awt.*;
 public class AWT {
 //抗力家胶.awt.硅摹包府

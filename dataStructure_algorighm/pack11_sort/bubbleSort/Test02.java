@@ -2,7 +2,7 @@ package dataStructure_algorighm.pack11_sort.bubbleSort;
 
 import dataStructure_algorighm.pack11_sort.SortFunctions;
 
-public class TestBubble02 {
+public class Test02 {
     public void test(){
 
         SortFunctions s = new SortFunctions();

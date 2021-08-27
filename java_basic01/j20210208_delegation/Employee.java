@@ -1,4 +1,4 @@
-package _past.j20210208_delegation;
+package java_basic01.j20210208_delegation;
 
 public class Employee {
 	

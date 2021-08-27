@@ -1,4 +1,4 @@
-package _past.j20201125;
+package java_basic01.j20201125;
 public class PrintEx {
 
 	static int k;

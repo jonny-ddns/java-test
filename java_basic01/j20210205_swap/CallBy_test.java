@@ -1,4 +1,4 @@
-package _past.j20210205_swap;
+package java_basic01.j20210205_swap;
 
 public class CallBy_test {
 	/*

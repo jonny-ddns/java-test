@@ -1,4 +1,4 @@
-package _past.j20210128_main;
+package java_basic01.j20210128_main;
 
 public class Main_test {
 	public static void main(String[] args) {

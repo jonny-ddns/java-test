@@ -1,7 +1,7 @@
 package dataStructure_algorighm.pack11_sort.bubbleSort;
 
 //버블정렬
-public class TestBubble01 {
+public class Test01 {
     public void test(){
         int[] intArr = {1, 14, 9, 6, 2, 19, 4, 7};
         //a. 반복문1 - 첫번째부터 n-1까지

@@ -1,6 +1,6 @@
-package _past.j20210616_inheritance_Interface.absractTest.family;
+package java_basic01.j20210616_inheritance_Interface.absractTest.family;
 
-import _past.j20210616_inheritance_Interface.absractTest.Korean;
+import java_basic01.j20210616_inheritance_Interface.absractTest.Korean;
 
 public abstract class Student extends Korean {
     abstract void study();
